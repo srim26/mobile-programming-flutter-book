@@ -1,0 +1,21 @@
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Editors / IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+
+# Secrets / environment
+.env
+.env.*
+*.key
+*.jks
+
+# Book temporary files
+~$*
+*.bak
