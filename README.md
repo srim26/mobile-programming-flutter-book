@@ -23,3 +23,45 @@ mobile-programming-flutter-book/
 │   ├── pubspec.yaml
 │   └── ...
 └── README.md
+
+## Status Pengembangan
+
+### Bab 1 — Fondasi Awal Student Life Assistant
+
+**Status: Completed & Locked**
+
+- Inisialisasi project Flutter.
+- Menyiapkan **Student Life Assistant** sebagai running project.
+- Verifikasi aplikasi Flutter pertama.
+- Menetapkan struktur awal repository.
+
+### Bab 2 — Dart sebagai Fondasi Logika Aplikasi
+
+**Status: Golden Chapter v1.0 — Validated & Locked**
+
+Student Life Assistant berkembang menjadi **v0.2 — Logic Engine**.
+
+Implementasi mencakup:
+
+- tipe data dan variabel;
+- null safety;
+- kondisi dan perulangan;
+- collections;
+- fungsi;
+- class dan object;
+- model `Task`;
+- perhitungan kegiatan yang belum selesai; dan
+- logika rekomendasi kegiatan.
+
+Kode checkpoint:
+
+`student_life_assistant/bab02_logic/`
+
+Tag repository:
+
+`bab02-v1.0`
+
+Program dapat dijalankan dengan:
+
+```bash
+dart run student_life_assistant/bab02_logic/main.dart
