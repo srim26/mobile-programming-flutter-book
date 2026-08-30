@@ -65,3 +65,31 @@ Program dapat dijalankan dengan:
 
 ```bash
 dart run student_life_assistant/bab02_logic/main.dart
+```
+
+Output utama yang diharapkan:
+
+```text
+Pending tasks: 2
+
+Recommendation:
+Kerjakan "Tugas Mobile Programming" terlebih dahulu.
+```
+
+### Bab 3
+
+**Status: Belum dimulai**
+
+Pengembangan berikutnya akan melanjutkan Student Life Assistant sesuai capaian pembelajaran dan blueprint Bab 3.
+
+## Version Checkpoints
+
+| Bab | Checkpoint | Status |
+|---|---|---|
+| Bab 1 | Initial Flutter project | Completed |
+| Bab 2 | `bab02-v1.0` | Validated & Locked |
+| Bab 3 | — | Belum dimulai |
+
+## Catatan
+
+Repository ini merupakan repository pendamping buku ajar. Setiap checkpoint digunakan untuk menjaga keterlacakan perkembangan running project dari satu tahap pembelajaran ke tahap berikutnya.
