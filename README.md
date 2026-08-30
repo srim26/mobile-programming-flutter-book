@@ -1,30 +1,25 @@
-\# Mobile Programming — Dari Flutter hingga Aplikasi Mobile Cerdas
+# Mobile Programming — Dari Flutter hingga Aplikasi Mobile Cerdas
 
+Repository pendamping buku ajar **Mobile Programming — Dari Flutter hingga Aplikasi Mobile Cerdas**.
 
+Repository ini mendokumentasikan pengembangan **Student Life Assistant** sebagai *running project* yang berkembang secara bertahap seiring pembahasan dalam buku.
 
-Repository pendamping buku ajar \*\*Mobile Programming — Dari Flutter hingga Aplikasi Mobile Cerdas\*\*.
+## Running Project
 
+**Student Life Assistant** digunakan untuk menghubungkan konsep, kode, praktik, dan hasil belajar pada setiap bab.
 
+Aplikasi dikembangkan secara incremental: dimulai dari fondasi Flutter dan Dart, kemudian berkembang menuju aplikasi mobile yang interaktif dan cerdas.
 
-\## Running Project
+## Struktur Repository
 
-
-
-Buku menggunakan \*\*Student Life Assistant\*\* sebagai running project untuk menunjukkan perkembangan aplikasi secara incremental dari Bab 1 hingga Bab 10.
-
-
-
-\## Struktur Awal
-
-
-
-\- `student\_life\_assistant/` — project Flutter utama.
-
-
-
-\## Status
-
-
-
-Bab 1 — Project initialization dan aplikasi Flutter pertama.
-
+```text
+mobile-programming-flutter-book/
+├── student_life_assistant/
+│   ├── lib/
+│   │   └── main.dart
+│   ├── bab02_logic/
+│   │   ├── main.dart
+│   │   └── task.dart
+│   ├── pubspec.yaml
+│   └── ...
+└── README.md
