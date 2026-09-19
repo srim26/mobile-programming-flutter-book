@@ -19,3 +19,5 @@ Thumbs.db
 # Book temporary files
 ~$*
 *.bak
+# Dart / Flutter generated files
+**/.dart_tool/
