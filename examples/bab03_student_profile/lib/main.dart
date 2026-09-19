@@ -64,18 +64,48 @@ class _StudentProfilePageState extends State<StudentProfilePage> {
             Card(
               child: Column(
                 children: [
-                  ProfileInfo(icon: Icons.person_outline, label: 'Nama', value: savedName.isEmpty ? '-' : savedName),
-                  ProfileInfo(icon: Icons.badge_outlined, label: 'NIM', value: savedNim.isEmpty ? '-' : savedNim),
-                  ProfileInfo(icon: Icons.school_outlined, label: 'Program Studi', value: savedStudyProgram.isEmpty ? '-' : savedStudyProgram),
+                  ProfileInfo(
+                    icon: Icons.person_outline,
+                    label: 'Nama',
+                    value: savedName.isEmpty ? '-' : savedName,
+                  ),
+                  ProfileInfo(
+                    icon: Icons.badge_outlined,
+                    label: 'NIM',
+                    value: savedNim.isEmpty ? '-' : savedNim,
+                  ),
+                  ProfileInfo(
+                    icon: Icons.school_outlined,
+                    label: 'Program Studi',
+                    value: savedStudyProgram.isEmpty ? '-' : savedStudyProgram,
+                  ),
                 ],
               ),
             ),
             const SizedBox(height: 24),
-            TextField(controller: nameController, decoration: const InputDecoration(labelText: 'Nama', border: OutlineInputBorder())),
+            TextField(
+              controller: nameController,
+              decoration: const InputDecoration(
+                labelText: 'Nama',
+                border: OutlineInputBorder(),
+              ),
+            ),
             const SizedBox(height: 12),
-            TextField(controller: nimController, decoration: const InputDecoration(labelText: 'NIM', border: OutlineInputBorder())),
+            TextField(
+              controller: nimController,
+              decoration: const InputDecoration(
+                labelText: 'NIM',
+                border: OutlineInputBorder(),
+              ),
+            ),
             const SizedBox(height: 12),
-            TextField(controller: studyProgramController, decoration: const InputDecoration(labelText: 'Program Studi', border: OutlineInputBorder())),
+            TextField(
+              controller: studyProgramController,
+              decoration: const InputDecoration(
+                labelText: 'Program Studi',
+                border: OutlineInputBorder(),
+              ),
+            ),
             const SizedBox(height: 16),
             ElevatedButton(onPressed: saveProfile, child: const Text('Simpan')),
           ],
@@ -86,13 +116,22 @@ class _StudentProfilePageState extends State<StudentProfilePage> {
 }
 
 class ProfileInfo extends StatelessWidget {
-  const ProfileInfo({super.key, required this.icon, required this.label, required this.value});
+  const ProfileInfo({
+    super.key,
+    required this.icon,
+    required this.label,
+    required this.value,
+  });
   final IconData icon;
   final String label;
   final String value;
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(leading: Icon(icon), title: Text(label), subtitle: Text(value));
+    return ListTile(
+      leading: Icon(icon),
+      title: Text(label),
+      subtitle: Text(value),
+    );
   }
 }
