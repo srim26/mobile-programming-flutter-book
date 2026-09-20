@@ -272,11 +272,51 @@ Checkpoint kode Bab 4 telah dipublikasikan pada branch `main` melalui commit:
 Milestone ini menjadi baseline pengembangan **state, asynchronous programming, dan local data** pada Bab 5.
 ---
 
-### Bab 5 â€” State, Async, dan Local Data
+### Bab 5 — State, Async, dan Local Data
 
-**Status: Planned**
+**Status: Repository Prepared — Verification Pending**
 
-Bab 5 direncanakan mengembangkan aplikasi dengan pengelolaan state, proses asynchronous, dan penyimpanan data lokal.
+Bab 5 mengembangkan **Student Life Assistant** menjadi **Stateful & Persistent App** tanpa mengambil materi REST API/HTTP/JSON Bab 6.
+
+Fokus implementasi:
+
+- `StatefulWidget` dan `setState()` untuk state lokal;
+- UI yang bereaksi terhadap perubahan state;
+- `Future`, `async`, dan `await`;
+- loading dan error state;
+- pemisahan model, UI, dan akses penyimpanan lokal;
+- persistensi sederhana menggunakan `shared_preferences`; dan
+- penggunaan `SharedPreferencesAsync` untuk operasi penyimpanan asynchronous.
+
+#### Praktik Terarah — State, Async & Local Data
+
+Lokasi:
+
+`examples/bab05_state_async_local_data/`
+
+Praktik menunjukkan alur **load → state → UI → edit → save → persistence** menggunakan data lokal sederhana.
+
+#### Running Project — Milestone Bab 5
+
+Lokasi:
+
+`app/student_life_assistant/`
+
+Perubahan incremental dari Bab 4 meliputi:
+
+- halaman Tugas menjadi stateful dan menampilkan progres tugas selesai;
+- halaman Profil memiliki loading, error, dan saving state;
+- preferensi nama tampilan serta opsi pengguna disimpan secara lokal;
+- `UserPreferences` memisahkan representasi data dari widget; dan
+- `LocalPreferencesRepository` memisahkan akses local storage dari UI.
+
+Dependency baru:
+
+`shared_preferences: ^2.5.5`
+
+Catatan: `shared_preferences` sesuai untuk data key-value sederhana dan bukan penyimpanan data kritis.
+
+Status **Code Verified** diberikan setelah `flutter pub get`, `dart format`, `flutter analyze`, `flutter test`, dan runtime verification selesai pada lingkungan Flutter.
 
 ---
 
@@ -330,7 +370,7 @@ Fokus meliputi integrasi fitur, testing, dokumentasi, evaluasi, dan demonstrasi 
 | Bab 2 | `bab02-v1.0` | Validated & Locked |
 | Bab 3 | Flutter UI Milestone | Content Locked â€” Verified |
 | Bab 4 | Responsive UI & Navigation | Content Locked — Code Verified |
-| Bab 5 | State, Async & Local Data | Planned |
+| Bab 5 | State, Async & Local Data | Repository Prepared — Verification Pending |
 | Bab 6 | REST API & JSON | Planned |
 | Bab 7 | Cloud & Authentication | Planned |
 | Bab 8 | Device Integration | Planned |
@@ -423,6 +463,16 @@ Contoh Bab 4 — Navigation & Screen Flow:
 ```bash
 cd examples/bab04_navigation_screen_flow
 flutter pub get
+flutter analyze
+flutter run -d chrome
+```
+
+Contoh Bab 5 — State, Async & Local Data:
+
+```bash
+cd examples/bab05_state_async_local_data
+flutter pub get
+dart format lib
 flutter analyze
 flutter run -d chrome
 ```
