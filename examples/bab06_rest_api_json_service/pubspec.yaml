@@ -1,0 +1,9 @@
+name: bab06_rest_api_json_service
+description: Companion example Bab 6 - REST API, JSON, dan service.
+publish_to: 'none'
+
+environment:
+  sdk: ^3.13.2
+
+dependencies:
+  http: ^1.6.0
