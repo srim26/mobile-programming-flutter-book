@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/feature_card.dart';
+import 'external_task_screen.dart';
 import 'profile_screen.dart';
 import 'schedule_screen.dart';
 import 'task_screen.dart';
-import '../widgets/feature_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   void _open(BuildContext context, Widget screen) {
-    Navigator.of(context).push(
-      MaterialPageRoute<void>(builder: (_) => screen),
-    );
+    Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => screen));
   }
 
   @override
@@ -22,12 +21,19 @@ class HomeScreen extends StatelessWidget {
         child: LayoutBuilder(
           builder: (context, constraints) {
             final isWide = constraints.maxWidth >= 700;
+
             final cards = [
               FeatureCard(
                 icon: Icons.task_alt,
                 title: 'Tugas',
                 subtitle: 'Lihat tugas dan detail pekerjaan.',
                 onTap: () => _open(context, const TaskScreen()),
+              ),
+              FeatureCard(
+                icon: Icons.cloud_outlined,
+                title: 'Tugas Eksternal',
+                subtitle: 'Ambil data tugas dari REST API.',
+                onTap: () => _open(context, const ExternalTaskScreen()),
               ),
               FeatureCard(
                 icon: Icons.calendar_month,
@@ -50,7 +56,7 @@ class HomeScreen extends StatelessWidget {
                   padding: EdgeInsets.all(isWide ? 32 : 16),
                   child: isWide
                       ? GridView.count(
-                          crossAxisCount: 3,
+                          crossAxisCount: 2,
                           crossAxisSpacing: 16,
                           mainAxisSpacing: 16,
                           childAspectRatio: 1.15,
