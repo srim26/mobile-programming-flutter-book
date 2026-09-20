@@ -1,6 +1,6 @@
-# Mobile Programming â€” Dari Flutter hingga Aplikasi Mobile Cerdas
+# Mobile Programming — Dari Flutter hingga Aplikasi Mobile Cerdas
 
-Repository pendamping buku ajar **Mobile Programming â€” Dari Flutter hingga Aplikasi Mobile Cerdas**.
+Repository pendamping buku ajar **Mobile Programming — Dari Flutter hingga Aplikasi Mobile Cerdas**.
 
 Repository ini berisi kode program dan artefak pendukung pembelajaran. Naskah buku tidak disimpan di repository ini.
 
@@ -43,7 +43,7 @@ Keterangan:
 
 ## Status Pengembangan
 
-### Bab 1 â€” Memasuki Dunia Mobile Programming
+### Bab 1 — Memasuki Dunia Mobile Programming
 
 **Status: Completed & Locked**
 
@@ -62,7 +62,7 @@ Running project pada tahap ini masih berupa aplikasi Flutter sederhana yang menj
 
 ---
 
-### Bab 2 â€” Dart sebagai Fondasi Logika Aplikasi
+### Bab 2 — Dart sebagai Fondasi Logika Aplikasi
 
 **Status: Validated & Locked**
 
@@ -113,9 +113,9 @@ Kerjakan "Tugas Mobile Programming" terlebih dahulu.
 
 ---
 
-### Bab 3 â€” Membangun Antarmuka dengan Flutter
+### Bab 3 — Membangun Antarmuka dengan Flutter
 
-**Status: Content Locked â€” Verified**
+**Status: Content Locked — Verified**
 
 Bab 3 membawa konsep dan logika aplikasi menuju antarmuka Flutter yang terstruktur dan interaktif.
 
@@ -133,7 +133,7 @@ Fokus implementasi:
 - composition; dan
 - reusable widget.
 
-#### Praktik Terarah â€” Student Profile
+#### Praktik Terarah — Student Profile
 
 Lokasi:
 
@@ -163,7 +163,7 @@ Hasil static analysis:
 No issues found!
 ```
 
-#### Running Project â€” Milestone Bab 3
+#### Running Project — Milestone Bab 3
 
 Lokasi:
 
@@ -320,7 +320,7 @@ Status **Code Verified** diberikan setelah `flutter pub get`, `dart format`, `fl
 
 ---
 
-### Bab 6 â€” REST API dan JSON
+### Bab 6 — REST API dan JSON
 
 **Status: Planned**
 
@@ -328,7 +328,7 @@ Bab 6 direncanakan menghubungkan aplikasi dengan layanan eksternal melalui REST 
 
 ---
 
-### Bab 7 â€” Cloud dan Authentication
+### Bab 7 — Cloud dan Authentication
 
 **Status: Planned**
 
@@ -336,7 +336,7 @@ Bab 7 direncanakan membawa aplikasi menuju layanan backend/cloud dan mekanisme a
 
 ---
 
-### Bab 8 â€” Integrasi Fitur Perangkat
+### Bab 8 — Integrasi Fitur Perangkat
 
 **Status: Planned**
 
@@ -344,7 +344,7 @@ Bab 8 direncanakan mengeksplorasi pemanfaatan kemampuan perangkat mobile dan int
 
 ---
 
-### Bab 9 â€” Integrasi Artificial Intelligence
+### Bab 9 — Integrasi Artificial Intelligence
 
 **Status: Planned**
 
@@ -352,7 +352,7 @@ Bab 9 direncanakan memperkenalkan integrasi fitur Artificial Intelligence ke dal
 
 ---
 
-### Bab 10 â€” Dari Project Menjadi Produk
+### Bab 10 — Dari Project Menjadi Produk
 
 **Status: Planned**
 
@@ -368,7 +368,7 @@ Fokus meliputi integrasi fitur, testing, dokumentasi, evaluasi, dan demonstrasi 
 |---|---|---|
 | Bab 1 | Initial Flutter Project | Completed & Locked |
 | Bab 2 | `bab02-v1.0` | Validated & Locked |
-| Bab 3 | Flutter UI Milestone | Content Locked â€” Verified |
+| Bab 3 | Flutter UI Milestone | Content Locked — Verified |
 | Bab 4 | Responsive UI & Navigation | Content Locked — Code Verified |
 | Bab 5 | State, Async & Local Data | Content Locked — Code Verified |
 | Bab 6 | REST API & JSON | Planned |
@@ -526,6 +526,6 @@ Setiap milestone digunakan untuk menjaga keterlacakan perkembangan **Student Lif
 
 ## Repository
 
-**Mobile Programming â€” Dari Flutter hingga Aplikasi Mobile Cerdas**
+**Mobile Programming — Dari Flutter hingga Aplikasi Mobile Cerdas**
 
 Companion repository untuk pembelajaran Mobile Programming berbasis Flutter dan pengembangan incremental **Student Life Assistant**.
