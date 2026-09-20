@@ -370,7 +370,7 @@ Fokus meliputi integrasi fitur, testing, dokumentasi, evaluasi, dan demonstrasi 
 | Bab 2 | `bab02-v1.0` | Validated & Locked |
 | Bab 3 | Flutter UI Milestone | Content Locked â€” Verified |
 | Bab 4 | Responsive UI & Navigation | Content Locked — Code Verified |
-| Bab 5 | State, Async & Local Data | Repository Prepared — Verification Pending |
+| Bab 5 | State, Async & Local Data | Content Locked — Code Verified |
 | Bab 6 | REST API & JSON | Planned |
 | Bab 7 | Cloud & Authentication | Planned |
 | Bab 8 | Device Integration | Planned |
