@@ -1,5 +1,5 @@
-name: student_life_assistant
-description: "A new Flutter project."
+name: bab05_state_async_local_data
+description: Praktik terarah state, async, dan local data Bab 5.
 publish_to: 'none'
 version: 0.1.0+1
 
