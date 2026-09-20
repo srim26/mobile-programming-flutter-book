@@ -1,6 +1,6 @@
-# Mobile Programming — Dari Flutter hingga Aplikasi Mobile Cerdas
+# Mobile Programming â€” Dari Flutter hingga Aplikasi Mobile Cerdas
 
-Repository pendamping buku ajar **Mobile Programming — Dari Flutter hingga Aplikasi Mobile Cerdas**.
+Repository pendamping buku ajar **Mobile Programming â€” Dari Flutter hingga Aplikasi Mobile Cerdas**.
 
 Repository ini berisi kode program dan artefak pendukung pembelajaran. Naskah buku tidak disimpan di repository ini.
 
@@ -25,6 +25,8 @@ mobile-programming-flutter-book/
 +-- examples/
 |   +-- bab02_dart_logic/
 |   +-- bab03_student_profile/
+|   +-- bab04_navigation_screen_flow/
+|   +-- bab04_responsive_layout/
 |
 +-- .gitignore
 +-- README.md
@@ -41,7 +43,7 @@ Keterangan:
 
 ## Status Pengembangan
 
-### Bab 1 — Memasuki Dunia Mobile Programming
+### Bab 1 â€” Memasuki Dunia Mobile Programming
 
 **Status: Completed & Locked**
 
@@ -60,7 +62,7 @@ Running project pada tahap ini masih berupa aplikasi Flutter sederhana yang menj
 
 ---
 
-### Bab 2 — Dart sebagai Fondasi Logika Aplikasi
+### Bab 2 â€” Dart sebagai Fondasi Logika Aplikasi
 
 **Status: Validated & Locked**
 
@@ -111,9 +113,9 @@ Kerjakan "Tugas Mobile Programming" terlebih dahulu.
 
 ---
 
-### Bab 3 — Membangun Antarmuka dengan Flutter
+### Bab 3 â€” Membangun Antarmuka dengan Flutter
 
-**Status: Content Locked — Verified**
+**Status: Content Locked â€” Verified**
 
 Bab 3 membawa konsep dan logika aplikasi menuju antarmuka Flutter yang terstruktur dan interaktif.
 
@@ -131,7 +133,7 @@ Fokus implementasi:
 - composition; dan
 - reusable widget.
 
-#### Praktik Terarah — Student Profile
+#### Praktik Terarah â€” Student Profile
 
 Lokasi:
 
@@ -161,7 +163,7 @@ Hasil static analysis:
 No issues found!
 ```
 
-#### Running Project — Milestone Bab 3
+#### Running Project â€” Milestone Bab 3
 
 Lokasi:
 
@@ -196,17 +198,17 @@ Milestone ini menjadi baseline pengembangan aplikasi multi-screen pada Bab 4.
 
 ### Bab 4 — Dari Satu Layar Menuju Aplikasi
 
-**Status: In Progress**
+**Status: Content Locked — Code Verified**
 
-Bab 4 mengembangkan Student Life Assistant dari aplikasi satu layar menuju aplikasi multi-screen.
+Bab 4 mengembangkan **Student Life Assistant** dari aplikasi satu layar menuju aplikasi multi-screen yang mampu menyesuaikan ruang tampil.
 
-Fokus pengembangan:
+Fokus implementasi:
 
 - responsive UI;
 - adaptive UI;
 - multi-screen application;
 - navigation;
-- routing;
+- routing dasar;
 - passing data antarhalaman; dan
 - screen flow.
 
@@ -214,9 +216,63 @@ Feature card **Tugas**, **Jadwal**, dan **Profil** yang dibangun pada Bab 3 menj
 
 Materi state management sistematis belum menjadi fokus pada tahap ini karena dibahas pada Bab 5.
 
+#### Praktik Terarah — Responsive Layout
+
+Lokasi:
+
+`examples/bab04_responsive_layout/`
+
+Praktik ini menunjukkan perubahan susunan antarmuka berdasarkan ruang layar yang tersedia.
+
+Verifikasi:
+
+- dependency resolution berhasil;
+- `flutter analyze` — **No issues found**; dan
+- runtime verification pada Chrome.
+
+#### Praktik Terarah — Navigation & Screen Flow
+
+Lokasi:
+
+`examples/bab04_navigation_screen_flow/`
+
+Praktik ini menunjukkan navigasi dasar dari daftar menuju halaman detail serta passing data ke screen tujuan.
+
+Verifikasi:
+
+- dependency resolution berhasil;
+- `flutter analyze` — **No issues found**; dan
+- runtime verification pada Chrome.
+
+#### Running Project — Milestone Bab 4
+
+Lokasi:
+
+`app/student_life_assistant/`
+
+Pada akhir Bab 4, **Student Life Assistant** telah berkembang menjadi aplikasi multi-screen dengan:
+
+- antarmuka responsive/adaptive;
+- screen **Tugas**, **Jadwal**, dan **Profil**;
+- navigation dan screen flow;
+- screen detail untuk Tugas dan Jadwal; dan
+- passing data antarhalaman.
+
+Implementasi running project telah melalui:
+
+- `flutter pub get`;
+- `flutter analyze` — **No issues found**;
+- `flutter test` — **All tests passed**; dan
+- runtime verification pada Chrome.
+
+Checkpoint kode Bab 4 telah dipublikasikan pada branch `main` melalui commit:
+
+`1d8e86d` — `feat(bab04): add responsive UI and multi-screen navigation`
+
+Milestone ini menjadi baseline pengembangan **state, asynchronous programming, dan local data** pada Bab 5.
 ---
 
-### Bab 5 — State, Async, dan Local Data
+### Bab 5 â€” State, Async, dan Local Data
 
 **Status: Planned**
 
@@ -224,7 +280,7 @@ Bab 5 direncanakan mengembangkan aplikasi dengan pengelolaan state, proses async
 
 ---
 
-### Bab 6 — REST API dan JSON
+### Bab 6 â€” REST API dan JSON
 
 **Status: Planned**
 
@@ -232,7 +288,7 @@ Bab 6 direncanakan menghubungkan aplikasi dengan layanan eksternal melalui REST 
 
 ---
 
-### Bab 7 — Cloud dan Authentication
+### Bab 7 â€” Cloud dan Authentication
 
 **Status: Planned**
 
@@ -240,7 +296,7 @@ Bab 7 direncanakan membawa aplikasi menuju layanan backend/cloud dan mekanisme a
 
 ---
 
-### Bab 8 — Integrasi Fitur Perangkat
+### Bab 8 â€” Integrasi Fitur Perangkat
 
 **Status: Planned**
 
@@ -248,7 +304,7 @@ Bab 8 direncanakan mengeksplorasi pemanfaatan kemampuan perangkat mobile dan int
 
 ---
 
-### Bab 9 — Integrasi Artificial Intelligence
+### Bab 9 â€” Integrasi Artificial Intelligence
 
 **Status: Planned**
 
@@ -256,7 +312,7 @@ Bab 9 direncanakan memperkenalkan integrasi fitur Artificial Intelligence ke dal
 
 ---
 
-### Bab 10 — Dari Project Menjadi Produk
+### Bab 10 â€” Dari Project Menjadi Produk
 
 **Status: Planned**
 
@@ -272,8 +328,8 @@ Fokus meliputi integrasi fitur, testing, dokumentasi, evaluasi, dan demonstrasi 
 |---|---|---|
 | Bab 1 | Initial Flutter Project | Completed & Locked |
 | Bab 2 | `bab02-v1.0` | Validated & Locked |
-| Bab 3 | Flutter UI Milestone | Content Locked — Verified |
-| Bab 4 | Responsive UI & Navigation | In Progress |
+| Bab 3 | Flutter UI Milestone | Content Locked â€” Verified |
+| Bab 4 | Responsive UI & Navigation | Content Locked — Code Verified |
 | Bab 5 | State, Async & Local Data | Planned |
 | Bab 6 | REST API & JSON | Planned |
 | Bab 7 | Cloud & Authentication | Planned |
@@ -309,6 +365,12 @@ Lakukan static analysis:
 
 ```bash
 flutter analyze
+```
+
+Jalankan pengujian:
+
+```bash
+flutter test
 ```
 
 Jalankan aplikasi:
@@ -347,6 +409,24 @@ flutter pub get
 flutter analyze
 ```
 
+Contoh Bab 4 — Responsive Layout:
+
+```bash
+cd examples/bab04_responsive_layout
+flutter pub get
+flutter analyze
+flutter run -d chrome
+```
+
+Contoh Bab 4 — Navigation & Screen Flow:
+
+```bash
+cd examples/bab04_navigation_screen_flow
+flutter pub get
+flutter analyze
+flutter run -d chrome
+```
+
 Folder contoh dapat dibuat minimal agar repository tetap ringkas. Platform-specific project files tidak harus disimpan pada setiap contoh apabila contoh tersebut ditujukan terutama sebagai kode pendamping pembelajaran.
 
 ---
@@ -355,22 +435,22 @@ Folder contoh dapat dibuat minimal agar repository tetap ringkas. Platform-speci
 
 Companion repository mengikuti beberapa prinsip:
 
-1. **Satu running project utama**  
+1. **Satu running project utama**
    Student Life Assistant berkembang secara incremental sepanjang buku.
 
-2. **Contoh dipisahkan dari running project**  
+2. **Contoh dipisahkan dari running project**
    Contoh atau praktik khusus bab ditempatkan pada `examples/`.
 
-3. **Tidak menduplikasi running project per bab**  
+3. **Tidak menduplikasi running project per bab**
    Perkembangan Student Life Assistant dilacak melalui Git dan checkpoint.
 
-4. **Repository tetap bersih**  
+4. **Repository tetap bersih**
    Build output, cache, `.dart_tool`, dan artefak lokal tidak disimpan dalam Git.
 
-5. **Kode harus dapat diverifikasi**  
+5. **Kode harus dapat diverifikasi**
    Milestone kode diperiksa melalui formatting, static analysis, dan runtime test sesuai kebutuhan.
 
-6. **Batas materi antar-bab dijaga**  
+6. **Batas materi antar-bab dijaga**
    Implementasi pada suatu bab tidak mengambil konsep utama yang baru dibahas pada bab berikutnya.
 
 ---
@@ -396,6 +476,6 @@ Setiap milestone digunakan untuk menjaga keterlacakan perkembangan **Student Lif
 
 ## Repository
 
-**Mobile Programming — Dari Flutter hingga Aplikasi Mobile Cerdas**
+**Mobile Programming â€” Dari Flutter hingga Aplikasi Mobile Cerdas**
 
 Companion repository untuk pembelajaran Mobile Programming berbasis Flutter dan pengembangan incremental **Student Life Assistant**.
